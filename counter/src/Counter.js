@@ -1,5 +1,6 @@
 import React from 'react'
 import Count from './Count.js'
+import Buttons from './Buttons.js'
 
 class Counter extends React.Component {
 
@@ -28,8 +29,10 @@ class Counter extends React.Component {
         return (
             <div>
                 <Count num={this.state.count}/>
-                <button onClick={this.handlePlusClick.bind(this)}>+</button>
-                <button onClick={this.handleMinusClick.bind(this)}>-</button>
+                <Buttons 
+                    onPlusClick={this.handlePlusClick.bind(this)} 
+                    onMinusClick={this.handleMinusClick.bind(this)}
+                />
             </div>
         )
     }
