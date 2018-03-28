@@ -10,8 +10,7 @@ class App extends Component {
         {_id:1, quote: "Don't cry because it's over, smile because it happened.", author: "Dr. Seuss"},
         {_id:2, quote: "Be yourself; everyone else is already taken.", author: "Oscar Wilde"},
         {_id:3, quote: "You only live once, but if you do it right, once is enough.", author: "Mae West"},
-        {_id:3, quote: "Be the change that you wish to see in the world.", author: "Mahatma Gandhi"} 
-         
+        {_id:3, quote: "Be the change that you wish to see in the world.", author: "Mahatma Gandhi"}  
       ],
       ranNum: 0
     }
@@ -21,7 +20,6 @@ class App extends Component {
     var max = this.state.quotes.length - 1
     var min = 0
     var random = Math.floor(Math.random() * (max - min + 1)) + min;
-    console.log(random)
     this.setState({
       ranNum: random
     })
